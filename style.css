@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300;400&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300&family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -7,18 +6,21 @@
 }
 
 body{
-    min-height: 2000px;
     background-color: black !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 section{
     position: relative;
+    padding: 5rem;
+    padding-top: 30%;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
 section:before{
@@ -27,7 +29,7 @@ section:before{
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, black, transparent);
+    /*background: linear-gradient(to top, black, transparent);*/
     z-index: 100000;
 }
 
@@ -41,10 +43,45 @@ section img{
     pointer-events: none;
 }
 
-#text1{
+.mainpage{
+    position: relative;
+    padding: 5rem;
+    padding-top: 20%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.mainpage img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#welcome{
     position: relative;
     color: white;
     font-size: 5em;
     z-index: 1;
-    float: left;
+}
+
+.title{
+    font-size: 5rem;
+}
+
+.heading1{
+    font-size: 5rem !important;
+}
+
+.text{
+    color: white;
+    font-size: 3vh;
 }
