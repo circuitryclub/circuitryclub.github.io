@@ -30,9 +30,30 @@ var count = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  if (hours < 10){
+   hours = "0" + hours;
+  }
+  else{
+   hours = hours;
+  }
+
+  if (minutes < 10){
+   minutes = "0" + minutes;
+  }
+  else{
+   minutes = minutes;
+  }
+
+  if (seconds < 10){
+   seconds = "0" + seconds;
+  }
+  else{
+   seconds = seconds;
+  }
+
   // Display the result in the element with id="demo"
-  document.getElementById("count-down").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("count-down").innerHTML = days + ":" + hours + ":"
+  + minutes + ":" + seconds;
 
   // If the count down is finished, write some text
   if (distance < 0) {
