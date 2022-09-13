@@ -2,7 +2,7 @@ let welcome = document.getElementById('welcome');
 let mainpg = document.getElementById('mainpg');
 let welcomeLogo = document.getElementById('welcome-logo');
 let welcomeCircle = document.getElementById('welcome-circle');
-
+//ian
  window.addEventListener('scroll', function(){
    var value = window.scrollY;
 
