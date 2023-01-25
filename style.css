@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300&family=Ubuntu&display=swap');
-@import url('http://fonts.cdnfonts.com/css/cunia');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300;400&family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -7,155 +7,251 @@
 }
 
 body{
-    background-color: black !important;
-    font-family: 'Open Sans', sans-serif !important;
+    background-color: #111111 !important;
 }
 
-section{
-    position: relative;
-    padding: 5rem;
-    padding-top: 30%;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-section:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    /*background: linear-gradient(to top, black, transparent);*/
-    z-index: 100000;
-}
-
-section img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
-.mainpage{
-    position: relative;
-    padding: 5rem;
-    padding-top: 8%;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.mainpage img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
-.heading1{
-    font-size: 5rem !important;
+.title{
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .text{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navig{
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 4vh;
 }
 
-.cunia{
-    font-family: 'Cunia', sans-serif;
-}
-
-.icon{
-    font-size: 3rem;
-    padding: 2%;
+.brand-title a{
     text-decoration: none;
     color: white;
 }
 
-#welcome{
-    position: relative;
-    padding-top: 10rem;
-    color: black;
-    font-size: 5em;
-    z-index: 1;
+.brand-title:hover a{
+    color: white;
 }
 
-#welcome-logo{
-    width: 55em;
-    height: auto;
-    margin-top: 10%;
-    margin-left: 40%;
-    text-align: center;
+.navig-sub ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-#welcome-circle{
-    width: 47em;
-    height: auto;
-    margin-bottom: 80%;
-    margin-right: 40%;
-    text-align: center;
+.navig-sub li{
+    list-style: none;
 }
 
-#count-down{
-    font-size: 10vw;
+.navig-sub li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
-#mobile-mainpg{
+.navig-sub li:hover{
+    text-decoration: underline;
+}
+
+.toggle-button{
+    position: absolute;
+    right: 1rem;
+    font-size: 35px;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#calendar{
-    text-decoration: none;
-    vertical-align: middle;
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
-#calendar-icon{
-    font-size: 2rem;
-    padding-right: 3%;
-    vertical-align: middle;
+.toggle-button:hover{
+    cursor: pointer;
 }
 
-@media (max-width: 950px){
-    .mainpage{
-        padding-top: 20%;
+/*.frontpage{
+    z-index: 5;
+    height: 50%;
+    width: 50%;
+    color: white;
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 2hv;
+    background-attachment: fixed;
+    background-position: center;
+}*/
+
+.front-line{
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 5px auto;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.frontpage-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frontbg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("zgrey.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#opening{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: xx-large;
+    padding-bottom: 3rem;
+}
+
+.club-descript{
+    color: white;
+    text-align: center;
+}
+
+#join-us{
+    padding-top: 5rem;
+}
+
+.img{
+    padding-top: 5vw;
+    height: auto;
+    width: 80%;
+    align-items: center;
+}
+
+.lettering-title{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.lettering-small-text{
+    color: rgba(255, 255, 255, 0.4);
+    text-align: left;
+}
+
+.socials{
+    padding-top: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.socials-title{
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin: 0;
+}@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@300;400&family=Ubuntu&display=swap');
+
+.socials-text{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.socials-icon{
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-size: 30px;
+    color: white;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.divider{
+    text-align: center;
+}
+
+.divider-line{
+    margin-top: 5vh;
+    display: inline-block;
+    width: 90%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 800px){
+    .navig-sub ul{
+        position: fixed;
+        inset: 0 0 0 0%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 3rem;
+        z-index: 1000;
+        
+        background: hsl(0, 0%, 0%, 1);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
     }
 
-    .heading1{
-        font-size: 5vh !important;
+    .navig-sub.active ul{
+        transform: translateX(30%);
+
+    }
+    
+    @supports (backdrop-filter: blur(1rem)){
+        .navig-sub ul{
+            background: hsl(0, 0%, 100%, 0.1);
+            backdrop-filter: blur(1rem);
+        }
     }
 
-    .icon{
-        padding-top: 15%;
+    .toggle-button{
+        z-index: 9999; 
+        
     }
 
-    #count-down{
-        font-size: 13vw;
-        padding-left: 0%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+    #button-disable{
+        display: block; 
     }
 
-    #desktop-mainpg{
+    #button-enable{
         display: none;
     }
 
-    #mobile-mainpg{
-        display: block;
-        font-size: 4vw;
+    /*
+    .toggle-button.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .toggle-button.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .toggle-button.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }*/
+
+    .stop-scrolling{
+        height: 100%;
+        overflow: hidden;
     }
 }
