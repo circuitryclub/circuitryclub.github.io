@@ -2,7 +2,6 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navigSub = document.getElementsByClassName('navig-sub')[0];
 const closeButton = document.getElementById('button-enable');
 
-
 toggleButton.addEventListener("click", () => {
     navigSub.classList.toggle('active');
 
